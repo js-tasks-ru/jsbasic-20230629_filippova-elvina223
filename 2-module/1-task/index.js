@@ -14,6 +14,7 @@ for (let key in salaries)  {
   if (typeof salaries[key] === "number" && !isNaN(salaries[key]) && salaries[key] != Infinity && salaries[key] != -Infinity)
            
      sumSalary += salaries[key];
-  }return sumSalary
+  }return sumSalary;
+  return null
 }
 console.log(sumSalary(salaries));
