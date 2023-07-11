@@ -10,8 +10,9 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
-}
+   return (name != null && ! name.includes(' ') && name.length >= '4')
+ }
+ console.log( isValid('') );
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
